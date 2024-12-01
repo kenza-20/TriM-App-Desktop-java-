@@ -1,0 +1,60 @@
+.parent{
+    -fx-background-color: transparent;
+}
+.pane{
+    -fx-background-color: #1f7a9e;
+}
+.trans-btn-white-border{
+    -fx-background-color: transparent;
+    -fx-background-radius: 5px;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 5px;
+    -fx-border-width: 1px;
+
+}
+.white-pane{
+    -fx-background-color: #ffffff;
+}
+.blue-panel{
+    -fx-background-color:rgb(239, 254, 255);
+}
+.tf_box{
+    -fx-background-color: transparent;
+    -fx-border-color: #DEDEE4;
+    -fx-border-width: 0px 0px 1px 0px;
+}
+.tf{
+    -fx-background-color: transparent;
+}
+.blue-btn{
+    -fx-background-color: #1f7a9e;
+    -fx-background-radius: 5px;
+
+}
+
+#roleCompte {
+    -fx-background-color: transparent;
+    -fx-background-radius: 5px;
+    -fx-border-color: #1f7a9e;
+    -fx-border-radius: 10px;
+    -fx-border-width: 1px;
+}
+
+#roleCompte.arrow {
+    -fx-background-color: #1f7a9e;
+}
+
+#roleCompte.list-cell {
+    -fx-background-color: #ffffff;
+}
+
+#roleCompte.list-view {
+    -fx-background-color: #1f7a9e;
+    -fx-control-inner-background: #ffffff;
+    -fx-background-insets: 0;
+}
+#roleCompte.list-cell:hover {
+    -fx-background-color: #1f7a9e; /* Couleur au survol */
+}
+
+

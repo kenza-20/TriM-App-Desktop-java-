@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane prefHeight="800.0" prefWidth="1262.0" stylesheets="@../styles/profile.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ModifierMedecinController">
+    <center>
+        <VBox alignment="CENTER" fillWidth="false" spacing="10.0">
+            <BorderPane.margin>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="60.0" />
+            </BorderPane.margin>
+         <children>
+            <Label text="Modifier vos coordonnées">
+               <font>
+                  <Font name="Berlin Sans FB" size="23.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </Label>
+            <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="470.0" prefWidth="475.0" spacing="5.0" styleClass="vbox" stylesheets="@../styles/analyse.css">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="120.0" prefWidth="550.0" spacing="5.0" stylesheets="@../styles/analyse.css">
+                     <children>
+                        <VBox prefHeight="93.0" prefWidth="266.0" spacing="2.0">
+                           <children>
+                              <Label text="Nom">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="18.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="Nom" focusTraversable="false" prefHeight="32.0" />
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="93.0" prefWidth="260.0" spacing="2.0">
+                           <children>
+                              <Label text="Prenom">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="18.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="Prenom" focusTraversable="false" prefHeight="32.0" />
+                           </children>
+                        </VBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <VBox prefHeight="125.0" prefWidth="550.0" spacing="2.0" stylesheets="@../styles/analyse.css">
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </VBox.margin>
+                     <children>
+                        <Label text="Numéro de téléphone">
+                           <font>
+                              <Font name="Berlin Sans FB" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="NumTel" focusTraversable="false" prefHeight="32.0" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="125.0" prefWidth="100.0" spacing="2.0">
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </VBox.margin>
+                     <children>
+                        <Label text="Adresse">
+                           <font>
+                              <Font name="Berlin Sans FB" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="Adresse" focusTraversable="false" prefHeight="32.0" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="125.0" prefWidth="100.0" spacing="2.0">
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </VBox.margin>
+                     <children>
+                        <Label text="Email">
+                           <font>
+                              <Font name="Berlin Sans FB" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="email" focusTraversable="false" prefHeight="32.0" />
+                     </children>
+                  </VBox>
+                  <HBox alignment="CENTER" spacing="80.0">
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </VBox.margin>
+                     <children>
+                        <VBox>
+                           <children>
+                              <Text fx:id="textlabhd" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="Heure de début" textAlignment="CENTER" wrappingWidth="132.00390625">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="18.0" />
+                                 </font>
+                              </Text>
+                              <HBox prefHeight="71.0" prefWidth="133.0" spacing="5.0">
+                                 <children>
+                                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="HR" />
+                                          <TextField fx:id="Hrdebut" focusTraversable="false" prefHeight="30.0" prefWidth="35.0" />
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="MN" />
+                                          <TextField fx:id="Mndebut" focusTraversable="false" prefHeight="30.0" prefWidth="35.0" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <VBox>
+                           <children>
+                              <Text fx:id="textlabhd1" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="Heure de fin" textAlignment="CENTER" wrappingWidth="132.00390625">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="18.0" />
+                                 </font>
+                              </Text>
+                              <HBox prefHeight="71.0" prefWidth="133.0" spacing="5.0">
+                                 <children>
+                                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="HR" />
+                                          <TextField fx:id="Hrfin" focusTraversable="false" prefHeight="30.0" prefWidth="35.0" />
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="MN" />
+                                          <TextField fx:id="Mnfin" focusTraversable="false" prefHeight="30.0" prefWidth="35.0" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <VBox prefHeight="125.0" prefWidth="100.0" spacing="2.0">
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </VBox.margin>
+                     <children>
+                        <Label text="Ancien mot de passe">
+                           <font>
+                              <Font name="Berlin Sans FB" size="18.0" />
+                           </font>
+                        </Label>
+                        <PasswordField fx:id="passwordancien" focusTraversable="false" prefHeight="32.0" />
+                     </children>
+                  </VBox>
+                  <VBox layoutX="31.0" layoutY="347.0" prefHeight="125.0" prefWidth="100.0" spacing="2.0">
+                     <children>
+                        <Label text="Nouveau mot de passe">
+                           <font>
+                              <Font name="Berlin Sans FB" size="18.0" />
+                           </font>
+                        </Label>
+                        <PasswordField fx:id="passwordNouv" focusTraversable="false" prefHeight="32.0" />
+                     </children>
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </VBox.margin>
+                  </VBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="30.0">
+                     <children>
+                        <Button fx:id="créer" mnemonicParsing="false" onAction="#creer" prefHeight="38.0" prefWidth="150.0" styleClass="blue-btn" text="Modifier" textFill="WHITE">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button fx:id="retour" mnemonicParsing="false" onAction="#retour" prefHeight="38.0" prefWidth="150.0" styleClass="blue-btn" text="Retour" textFill="WHITE">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="20.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets left="50.0" right="50.0" />
+               </VBox.margin>
+            </VBox>
+         </children>
+        </VBox>
+    </center>
+    <left>
+        <VBox fx:id="vbox5" alignment="CENTER" prefHeight="780.0" prefWidth="281.0" stylesheets="@../styles/analyse.css" BorderPane.alignment="CENTER">
+            <children>
+                <HBox>
+                    <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" />
+                    </VBox.margin>
+                </HBox>
+                <HBox layoutX="20.0" layoutY="263.0">
+                    <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" />
+                    </VBox.margin>
+                </HBox>
+                <Circle fx:id="circle" fill="#eeeeee" radius="75.0" stroke="BLACK" strokeType="INSIDE" />
+                <Label text="Amine Yousfi" textFill="WHITE">
+                    <font>
+                        <Font name="Berlin Sans FB" size="20.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="10.0" />
+                    </VBox.margin>
+                </Label>
+                <Label text="Amine.yousfi@gmail.com" textFill="WHITE">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="20.0" />
+                    </VBox.margin>
+                </Label>
+                <HBox layoutX="20.0" layoutY="263.0">
+                    <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" />
+                    </VBox.margin>
+                </HBox>
+                <HBox fx:id="Profile" alignment="CENTER" onMouseClicked="#profile" prefHeight="60.0" prefWidth="270.0" spacing="15.0" styleClass="mouse-moved" stylesheets="@../styles/analyse.css">
+                    <children>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../img/profile.png" />
+                            </image>
+                        </ImageView>
+                        <Label fx:id="profile" prefHeight="32.0" prefWidth="150.0" stylesheets="@../styles/ajoutMaladie.css" text="Profile" textFill="#2f3e44">
+                            <font>
+                                <Font name="Gadugi" size="17.0" />
+                            </font>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </Label>
+                    </children>
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                </HBox>
+                <HBox fx:id="Profile1" alignment="CENTER" layoutX="10.0" layoutY="263.0" onMouseClicked="#modifierProfil" prefHeight="60.0" prefWidth="270.0" spacing="15.0" styleClass="selected" stylesheets="@../styles/analyse.css">
+                    <children>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../img/modifier.png" />
+                            </image>
+                        </ImageView>
+                        <Label fx:id="profile1" prefHeight="32.0" prefWidth="150.0" stylesheets="@../styles/ajoutMaladie.css" text="Modifier profil" textFill="#2f3e44">
+                            <font>
+                                <Font name="Berlin Sans FB" size="20.0" />
+                            </font>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </Label>
+                    </children>
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="60.0" prefWidth="270.0" spacing="15.0" styleClass="mouse-moved" stylesheets="@../styles/analyse.css">
+                    <children>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../img/ords.png" />
+                            </image>
+                        </ImageView>
+                        <Label fx:id="ord" onMouseClicked="#toOrdList" prefHeight="32.0" prefWidth="172.0" stylesheets="@../styles/ajoutMaladie.css" text="Ordonnances" textFill="#2f3e44">
+                            <font>
+                                <Font name="Gadugi" size="17.0" />
+                            </font>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </Label>
+                    </children>
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                </HBox>
+                <HBox fx:id="afficheMaladies" alignment="CENTER" prefHeight="60.0" prefWidth="249.0" spacing="15.0" styleClass="mouse-moved" stylesheets="@../styles/analyse.css">
+                    <children>
+                        <ImageView fitHeight="30.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../img/mal.png" />
+                            </image>
+                        </ImageView>
+                        <Label fx:id="mals" onMouseClicked="#toMaladies" prefHeight="52.0" prefWidth="172.0" stylesheets="@../styles/ajoutMaladie.css" text="Maladies" textFill="#2f3e44">
+                            <font>
+                                <Font name="Gadugi" size="17.0" />
+                            </font>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </Label>
+                    </children>
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                </HBox>
+                <Pane prefHeight="11.0" prefWidth="280.0" VBox.vgrow="ALWAYS">
+                    <children>
+                        <HBox alignment="CENTER" layoutX="2.0" prefHeight="60.0" prefWidth="290.0" spacing="15.0" styleClass="mouse-moved" stylesheets="@../styles/analyse.css">
+                            <children>
+                                <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../img/chat.png" />
+                                    </image>
+                                </ImageView>
+                                <Label fx:id="contact" onMouseClicked="#toSocket" prefHeight="32.0" prefWidth="170.0" stylesheets="@../styles/listMaladies.css" text="Contact" textFill="#2f3e44">
+                                    <font>
+                                        <Font name="Gadugi" size="17.0" />
+                                    </font>
+                                    <cursor>
+                                        <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                </Label>
+                            </children>
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                        </HBox>
+                    </children>
+                </Pane>
+                <HBox layoutX="20.0" layoutY="263.0">
+                    <children>
+                        <HBox alignment="CENTER" onMouseClicked="#deconnecter" prefHeight="60.0" prefWidth="270.0" spacing="15.0" styleClass="mouse-moved" stylesheets="@../styles/analyse.css">
+                            <children>
+                                <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../img/se-deconnecter.png" />
+                                    </image>
+                                </ImageView>
+                                <Label fx:id="dec" prefHeight="32.0" prefWidth="153.0" stylesheets="@../styles/ajoutMaladie.css" text="Déconnecter" textFill="#2f3e44">
+                                    <font>
+                                        <Font name="Gadugi" size="17.0" />
+                                    </font>
+                                    <cursor>
+                                        <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                </Label>
+                            </children>
+                        </HBox>
+                    </children>
+                    <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" />
+                    </VBox.margin>
+                </HBox>
+                <ImageView fitHeight="46.0" fitWidth="190.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../img/logo.png" />
+                    </image>
+                    <VBox.margin>
+                        <Insets bottom="10.0" />
+                    </VBox.margin>
+                </ImageView>
+            </children>
+            <BorderPane.margin>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </BorderPane.margin>
+        </VBox>
+    </left>
+</BorderPane>
